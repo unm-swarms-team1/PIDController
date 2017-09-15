@@ -2,9 +2,9 @@
 
 function control_forces = PIDController( current_time, joint1_angle_setpoint, joint2_angle_setpoint, joint1_measured_angle, joint2_measured_angle, error1_dot, error2_dot )
 
-k_p = 0.0019;
-k_d = 0.00002;
-k_i = 0.0000048;
+k_p = 200;
+k_d = -35.5;
+k_i = 25.5;
 
 persistent error_integral
 persistent last_time
